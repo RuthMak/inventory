@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body class="hb-bg">
+  <%- include('partials/header') %>
+
+  <header class="hb-hero text-light d-flex align-items-center">
+    <div class="container">
+      <div class="col-lg-8">
+        <h1 class="display-5 fw-bold lh-sm">Craft Coffee, Local Heart.</h1>
+        <p class="lead mt-3">Roasted in Indy. Sipped everywhere. From bold espresso to buttery pastries, we’ve got your daily ritual.</p>
+        <a href="/products" class="btn btn-lg btn-brand mt-2">Shop the Menu</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features -->
+  <section class="container py-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Small-Batch Roasting</h5>
+            <p class="card-text">We roast in micro-batches to lock in freshness and character.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Seasonal Bakes</h5>
+            <p class="card-text">Pastries baked daily, maple pecan scones, lemon loaves, and more.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0">
+          <div class="card-body">
+            <h5 class="card-title">Ethically Sourced</h5>
+            <p class="card-text">We partner with farms committed to sustainable, fair practices.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <%- include('partials/footer') %>
+</body>
+</html>

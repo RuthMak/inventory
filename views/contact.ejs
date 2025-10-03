@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('partials/head') %>
+</head>
+<body class="hb-bg">
+  <%- include('partials/header') %>
+
+  <main class="container py-5">
+    <div class="row g-4">
+      <div class="col-lg-6">
+        <h1 class="fw-bold">Get in Touch</h1>
+        <p class="lead">We’d love to hear from you.</p>
+        <div class="card shadow-sm border-0">
+          <div class="card-body">
+            <p class="mb-1"><strong>Email:</strong> hello@cedarbean.com</p>
+            <p class="mb-1"><strong>Phone:</strong> (317) 555-0123</p>
+            <p class="mb-0"><strong>Address:</strong> 123 Bean Cir, Indianapolis, IN</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="h5 fw-bold mb-3">Message Us</h2>
+        <!-- Static form (no backend post yet; Philip can wire later) -->
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label class="form-label">First name</label>
+            <input type="text" class="form-control" placeholder="Ruth">
+          </div>
+          <div class="col-md-6">
+            <label class="form-label">Last name</label>
+            <input type="text" class="form-control" placeholder="Mak">
+          </div>
+          <div class="col-12">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" placeholder="ruth@example.com">
+          </div>
+          <div class="col-12">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="4" placeholder="How can we help?"></textarea>
+          </div>
+          <div class="col-12">
+            <button type="button" class="btn btn-brand">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <%- include('partials/footer') %>
+</body>
+</html>
