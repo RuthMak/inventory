@@ -1,0 +1,76 @@
+:root{
+  --hb-brand:#6b3e2e;          /* coffee brown (primary) */
+  --hb-accent:#c0895e;         /* caramel */
+  --hb-ink:#222;               /* body text */
+  --hb-muted:#6c757d;          /* muted */
+  --hb-bg:#faf7f5;             /* warm paper */
+  --hb-card:#ffffff;
+}
+
+html,body{
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+  color: var(--hb-ink);
+  background: var(--hb-bg);
+}
+
+/* Navbar */
+.hb-navbar{
+  background: var(--hb-brand);
+}
+.brand-text{
+  font-weight: 700;
+  letter-spacing: .25px;
+}
+
+/* Footer */
+.hb-footer{
+  background: #1f1511;
+  color: #eee;
+}
+.hb-footer .brand-text{ color:#fff; }
+
+/* Buttons */
+.btn-brand{
+  background: var(--hb-accent);
+  border: none;
+  color: #1f1511;
+  font-weight: 600;
+}
+.btn-brand:hover{
+  filter: brightness(0.95);
+}
+.btn-brand-outline{
+  border: 2px solid var(--hb-accent);
+  color: var(--hb-brand);
+  font-weight: 600;
+  background: transparent;
+}
+.btn-brand-outline:hover{
+  background: var(--hb-accent);
+  color: #1f1511;
+}
+
+/* Hero */
+.hb-hero{
+  min-height: 56vh;
+  background-image: linear-gradient(rgba(31,21,17,.55), rgba(31,21,17,.55)),
+                    url('/images/hero_coffee_placeholder.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Cards */
+.product-card{
+  border-radius: 16px;
+}
+.product-image{
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* Page background */
+.hb-bg{
+  background: var(--hb-bg);
+}
