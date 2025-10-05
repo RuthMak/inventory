@@ -1,0 +1,30 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-uppercase" href="/">
+        <i class="bi bi-cup-hot me-1"></i> Haven Brew
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link <%= currentPath === '/' ? 'active' : '' %>" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <%= currentPath.startsWith('/products') ? 'active' : '' %>" href="/products">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <%= currentPath === '/about' ? 'active' : '' %>" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link <%= currentPath === '/contact' ? 'active' : '' %>" href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

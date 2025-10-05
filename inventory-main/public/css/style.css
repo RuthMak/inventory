@@ -1,0 +1,119 @@
+
+:root {
+  --hb-brand: #6b3e2e;     
+  --hb-accent: #c0895e;    
+  --hb-ink: #222;           
+  --hb-muted: #6c757d;       
+  --hb-bg: #faf7f5;          
+  --hb-card: #ffffff;        
+}
+html, body {
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+  color: var(--hb-ink);
+  background: var(--hb-bg);
+  margin: 0;
+  padding: 0;
+}
+.hb-navbar {
+  background: var(--hb-brand);
+}
+.brand-text {
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  color: #fff;
+}
+.nav-link.active {
+  font-weight: 600;
+  border-bottom: 2px solid var(--hb-accent);
+}
+.hb-footer {
+  background: #1f1511;
+  color: #eee;
+  padding: 2rem 0;
+}
+.hb-footer .brand-text {
+  color: #fff;
+  font-weight: 700;
+}
+.hb-footer a {
+  color: var(--hb-accent);
+  text-decoration: none;
+}
+.hb-footer a:hover {
+  text-decoration: underline;
+}
+.btn-brand {
+  background: var(--hb-accent);
+  border: none;
+  color: #1f1511;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+}
+.btn-brand:hover {
+  filter: brightness(0.95);
+}
+.btn-brand-outline {
+  border: 2px solid var(--hb-accent);
+  color: var(--hb-brand);
+  font-weight: 600;
+  background: transparent;
+  padding: 0.5rem 1.25rem;
+  border-radius: 6px;
+}
+.btn-brand-outline:hover {
+  background: var(--hb-accent);
+  color: #1f1511;
+}
+.hb-hero {
+  min-height: 56vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-image: linear-gradient(rgba(31,21,17,.55), rgba(31,21,17,.55)),
+                    url('/images/hero_coffee_placeholder.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 4rem 1rem;
+}
+.hb-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.hb-hero p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+.product-card {
+  background: var(--hb-card);
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,.05);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+.product-card:hover {
+  transform: translateY(-4px);
+}
+.product-image {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.product-body {
+  padding: 1rem;
+}
+.product-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+.product-price {
+  color: var(--hb-accent);
+  font-weight: 700;
+  margin-top: 0.25rem;
+}
+.hb-bg {
+  background: var(--hb-bg);
+}
